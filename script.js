@@ -1,4 +1,4 @@
-const API_KEY = "put your api id here";
+const API_KEY = "enter your api id here";
 
 function getWeather() {
   const city = document.getElementById("city").value;
