@@ -1,0 +1,40 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    border-radius: 8px;
+    /* background-color: rgb(176, 176, 180); */
+}
+.my-image{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px ;
+    transition: transform 0.3s;
+}
+
+.my-image:hover{
+    transform: scale(1.03);
+    box-shadow: 0 12px 35px rgb(7, 103, 221);
+}
+@media (max-width:600px){
+    .my-image{
+        width: 50%;
+        height: 90%;
+    }
+}
